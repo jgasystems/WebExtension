@@ -1,0 +1,29 @@
+{
+    	"name": "JGA Extension",
+    	"version": "0.0.0.1",
+	"author": "JGA",
+    	"manifest_version": 3,
+    	"description": "Extension de prueba",
+	"icons": {
+		"128": "128.png"
+	},
+	"action": {
+ 	  "default_icon": "images/icon_32.png",
+	  "default_title" : "JGA Extension",
+        "default_popup": "popup/popup.html"
+    	},
+	"permissions": [
+		"unlimitedStorage",
+		"notifications",
+		"nativeMessaging"
+	],
+	"background":{
+		"service_worker": "background.js",
+		"type": "module"
+	},
+	"externally_connectable":{
+		"matches":[ 
+			"http://localhost:*/*"
+		]
+	}
+}
