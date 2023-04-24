@@ -1,0 +1,25 @@
+html {
+    color: #FFF;
+    height: 200px;
+    width: 400px;
+    background: radial-gradient(ellipse at bottom, #181f2c 0%, #181f2c 100%);
+    overflow: hidden;
+}
+
+body {
+    height: 200px;
+    width: 400px;
+    overflow: hidden;
+}
+
+.logo {
+    margin-right: 5px;
+}
+
+.logo-paradigma {
+    margin-right: 5px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 31%;
+}
