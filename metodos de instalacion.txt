@@ -1,0 +1,64 @@
+https://www.chromium.org/administrators/pre-installed-extensions/
+https://developer.chrome.com/docs/extensions/mv3/external_extensions/
+https://support.google.com/chrome/a/answer/7666985?hl=en
+https://developer.chrome.com/docs/extensions/mv3/match_patterns/
+https://drive.google.com/file/d/1-ruEkj9h4qYA007HZPQmj-72Eu3EPIGF/view?usp=sharing
+https://drive.google.com/file/d/1-ruEkj9h4qYA007HZPQmj-72Eu3EPIGF/
+
+https://learn.microsoft.com/en-us/microsoft-edge/extensions-chromium/developer-guide/alternate-distribution-options
+
+
+Intalacion Politicas (URL)
+**************************************************************************
+ExtensionInstallAllowlist
+1 apidddaanbdaonofefccbaljaclmdjbd
+
+ExtensionInstallForcelist
+1 apidddaanbdaonofefccbaljaclmdjbd
+1 jakdpahkfegcjfafifdemindocgdjmcc;http://localhost:3000/extension/updates.xml
+
+*Cuando es un servidor propio se debe apuntar al XML
+
+ExtensionInstallSources
+1 http://localhost:3000/extension1*
+1 https://drive.google.com/file/d/1-ruEkj9h4qYA007HZPQmj-72Eu3EPIGF/*
+
+
+Istalacion por Registro Windows (Archivo local)
+***************************************************************************
+32-bit Windows: HKEY_LOCAL_MACHINE\Software\Microsoft\Edge\Extensions
+64-bit Windows: HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Edge\Extensions
+
+Key apidddaanbdaonofefccbaljaclmdjbd
+path C:\Users\jorge\Desktop\ExtensionJGA\jakdpahkfegcjfafifdemindocgdjmcc.crx
+path C:\Users\jorge\Desktop\servidorNode\public\extension1\Extensio.crx
+version 0.0.0.1 
+update_url http://localhost:3000/extension1
+
+
+Rutas para extension:
+-----------------------------------------------------------
+file:///C:\\Users\\jorge\\Desktop\\Extensio\\empaquetado
+jakdpahkfegcjfafifdemindocgdjmcc
+bpkbldbhiddmmboldodedgmdchlbmkok
+apidddaanbdaonofefccbaljaclmdjbd
+
+Notas:
+------------------------------------------------------------
+Windows information and settings
+Group Policy (ADMX) info
+GP unique name: ExtensionInstallForcelist
+GP name: Control which extensions are installed silently
+GP path (Mandatory): Administrative Templates/Microsoft Edge/Extensions
+GP path (Recommended): N/A
+GP ADMX file name: MSEdge.admx
+
+Windows Registry Settings
+Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge\ExtensionInstallForcelist
+Path (Recommended): N/A
+Value Name: 1, 2, 3, ...
+Value Type: list of REG_SZ
+
+Ruta donde se isntalan las extensiones
+C:\Users\jorge\AppData\Local\Google\Chrome\User Data\Default\Extensions
+C:\Users\jorge\AppData\Local\Microsoft\Edge\User Data\Default\Extensions
